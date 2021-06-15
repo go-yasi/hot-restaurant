@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/go-yasi/hot-restaurant#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "inquirer": "^8.1.0"
   }
 }

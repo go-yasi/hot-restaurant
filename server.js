@@ -4,10 +4,11 @@ const path = require("path");
 
 // Set up Express
 const app = express();
-const PORT = 8888;
+const PORT = process.env.PORT || 8888;
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Spinning up the server
 app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
