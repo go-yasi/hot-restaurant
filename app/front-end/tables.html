@@ -79,4 +79,23 @@
 
     </div>
 </body>
+
+<!-- AJAX call to grab the data from the API route and display on page-->
+<script type="text/javascript">
+
+    function runTableQuery() {
+        var currentURL = window.location.origin;
+
+        $.ajax({ul: currentURL + "/api/tables", method: "GET"})
+        .done(function(tableData){
+            console.log("------------------------------------");
+            console.log("URL: " + currentURL + "/api/tables");
+            console.log("------------------------------------");
+            console.log(tableData);
+            console.log("------------------------------------");
+        })
+    }
+
+</script>
+
 </html>

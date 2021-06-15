@@ -15,8 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
  
-
-// Includes the HTML route we created in this server file
+require("./app/routes/api-routes.js")(app);
 require("./app/routes/html-routes.js")(app);
 
 // Spinning up the server
